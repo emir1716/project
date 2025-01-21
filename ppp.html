@@ -1,0 +1,121 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Evaluación de Página Web</title>
+    <style>
+	
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .titulo {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: #f2f2f2;
+            border-bottom: 2px solid #ccc;
+        }
+    </style>
+</head>
+
+
+  
+
+    <!-- Formulario que enviará los datos a Formspree -->
+    <center><form action="reyes.irvin_22071210@cetis054.edu.mx" method="POST">
+        <table>
+            <!-- Fila con el título dentro de la tabla -->
+            <tr>
+                <td colspan="2" class="titulo">Evaluación de Página Web</td>
+            </tr>
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" id="nombre" name="nombre" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Correo Electrónico:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="diseño">¿Cómo calificas el diseño de la página?</label></td>
+                <td>
+                    <select id="diseño" name="diseño" required>
+                        <option value="Excelente">Excelente</option>
+                        <option value="Bueno">Bueno</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Malo">Malo</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="usabilidad">¿Qué tan fácil es navegar en la página?</label></td>
+                <td>
+                    <select id="usabilidad" name="usabilidad" required>
+                        <option value="Muy fácil">Muy fácil</option>
+                        <option value="Fácil">Fácil</option>
+                        <option value="Difícil">Difícil</option>
+                        <option value="Muy difícil">Muy difícil</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="contenido">¿Cómo calificas el contenido de la página?</label></td>
+                <td>
+                    <select id="contenido" name="contenido" required>
+                        <option value="Excelente">Excelente</option>
+                        <option value="Bueno">Bueno</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Pobre">Pobre</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comentarios">Comentarios adicionales:</label></td>
+                <td><textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe aquí tus comentarios..."></textarea></td>
+            </tr>
+            <!-- Fila para el botón de enviar dentro de la tabla -->
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Enviar Evaluación">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
